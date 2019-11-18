@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="icon" href="DS.png" sizes="20x20" type="image/png">
+	<title>1º 3ra Login</title>
+	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+</head>
+<body>
+	<script type="text/javascript">
+    function verificar() {
+	var pc=document.getElementById("clave").value;
+    	if (pc=="1234")location.href="home.html"
+    	else alert("Contraseña incorrecta...prueba con 1234")
+    }
+    </script>
+	<form action="" class="formulario">
+		<h1 class="formulario__titulo">CAMPUS VIRTUAL</h1>
+			<input type="password" id="clave" class="formulario__input">
+				<label for=""class="formulario__label">Contraseña</label>
+				<input class="formulario__submit" type="button" value="ENTRAR" onclick="verificar();">
+	</form>
+
+	<br>
+	<footer>
+		<strong>Tp Logica y Estructura de Datos copyrigth&copy; Tomasevich & Guibe 2019</strong>
+	</footer>
+</body>
+</html>

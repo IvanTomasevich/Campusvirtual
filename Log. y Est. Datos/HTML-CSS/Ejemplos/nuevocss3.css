@@ -1,0 +1,151 @@
+/* Nuevos elementos CSS3 */
+
+body {
+  text-align: center;
+}
+
+/*
+#titulo {
+  font: bold 36px verdana, sans-serif; 
+} */
+
+
+#titulo { 
+  /* nueva fuente para el titulo */
+  font: bold 36px MiNuevaFuente, verdana, sans-serif; 
+  /* generando una sombra para el título */
+  /* text-shadow: rgb(0,0,150) 3px 3px 5px; */
+  /* mejorando la sombra del texto con transparencia */
+} 
+@font-face {
+  font-family: 'MiNuevaFuente';
+  src: url('Saginaw  Light.ttf');
+}
+
+
+#principal {
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #999999;
+  background: #DDDDDD;
+
+  /* generando esquinas redondeadas */
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  
+  
+  /* diferentes valores para cada esquina */
+  /*
+  border-radius: 20px 10px 30px 50px;
+  -moz-border-radius: 20px 10px 30px 50px;
+  -webkit-border-radius: 20px 10px 30px 50px;
+  */
+  /* esquinas elipticas */
+  /*
+  border-radius: 30px / 20px; 
+  -moz-border-radius: 30px / 20px;
+  -webkit-border-radius: 30px / 20px;
+  */
+  
+  /* aplicando sombra a nuestra caja */
+  
+  box-shadow: rgb(150,150,150) 5px 5px;
+  -moz-box-shadow: rgb(150,150,150) 5px 5px;
+  -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+  
+
+  /* agregando el valor de difuminación a box-shadow */
+  /*
+  box-shadow: rgb(150,150,150) 5px 5px 10px;
+  -moz-box-shadow: rgb(150,150,150) 5px 5px 10px;
+  -webkit-box-shadow: rgb(150,150,150) 5px 5px 10px;
+  */
+
+  /* sombra interna */
+  /*
+  box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+  -moz-box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+  -webkit-box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+  */
+  
+  /* gradiente de fondo a nuestra caja  */
+  /*
+  background: -webkit-linear-gradient(top, #FFFFFF, #006699);
+  background: -moz-linear-gradient(top, #FFFFFF, #006699);
+  */
+
+  /* gradiente con un ángulo de dirección de 30 grados */
+  /* background: linear-gradient(30deg, #FFFFFF, #006699); */
+
+  /* declarando puntos de terminación */
+  /* background: -moz-linear-gradient(top, #FFFFFF 50%, #006699 90%); */
+  /* background: -webkit-linear-gradient(top, #FFFFFF 50%, #006699 90%); */
+  
+  /* gradiente radial */
+  /* background: -moz-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%); */
+  /* background: -webkit-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%); */
+  
+  /* agregando un segundo borde a la cabecera */
+  /*
+  outline: 2px dashed #000099;
+  outline-offset: 10px;
+  */
+
+  /* un borde personalizado para la cabecera */
+  /*
+  border: 29px;
+  border-image: url("diamonds.png") 29 round; 
+  -moz-border-image: url("diamonds.png") 29 round;
+  -webkit-border-image: url("diamonds.png") 29 round; 
+  */
+
+  /* cambiando la escala de la caja de la cabecera */
+  /*
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  */
+  
+  /* creando una imagen espejo con scale */
+  /*
+  -moz-transform: scale(1,-1);
+  -webkit-transform: scale(1,-1);
+  */
+  
+  /* rotando la caja */
+  /*
+  -moz-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  */
+  
+  /* inclinar horizontalmente */
+  /*
+  -moz-transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+  */
+  
+  /* moviendo la caja de la cabecera hacia la derecha */
+  /*
+  -moz-transform: translate(100px);
+  -webkit-transform: translate(100px);
+  */
+  
+  /* moviendo, escalando y rotando el elemento con solo una línea de código */
+  /*
+  -moz-transform: translate(100px) rotate(45deg) scale(0.3);
+  -webkit-transform: translate(100px) rotate(45deg) scale(0.3);
+  */
+}
+
+/* Transformaciones Dinámicas con PseudoClases */
+#principal:hover { 
+  /* Transformacion usando transiciones */
+  -moz-transform: rotate(10deg);  
+  -webkit-transform: rotate(10deg);
+ } 
+ 
+  
+

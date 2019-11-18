@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title> Update de Claves </title>
+</head>
+<body>
+
+<script src="control_claves.js"> 
+</script>
+
+<form onsubmit="if (validarClaves()) {return true;} else {recargar();return false;}" method="post">
+  <ul>
+	<br><br><b>Usuario </b>&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" maxlength="10" id="usu" autofocus required />         
+    <br><br><b>Clave </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" maxlength="8" id="cla" required />   
+	<br><br>
+	<input type="submit" value="Enviar" />
+	<input type="reset" value="Limpiar" />
+  </ul>
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title> Update de Claves </title>
+</head>
+<body>
+
+<script src="cambio_claves.js"> 
+</script>
+
+<script>
+function verificar() {
+	var pAn = document.getElementById("pAn").value
+	var pNv = document.getElementById("pNv").value
+	var pNr = document.getElementById("pNr").value
+	if (pAn.length == 0 || pNv.length == 0 || pNr.length == 0) 
+		{alert("Debes completar todos los datos");
+		 return false;}
+	else if (pAn != pNv && pNv == pNr) {alert("Te has registrado correctamente"); 
+										return true;}
+		 else if (pNv != pNr) {alert("Las nuevas claves deben coincidir");
+							   return false;}
+		 else {alert("Clave expirada");
+			   return false;}
+} 
+
+
+</script>
+
+<form>
+  <ul>
+	<br><br><b>Clave Antigua </b>&nbsp;&nbsp;&nbsp;&nbsp;  <input type="password" maxlength="8" id="pAn" autofocus />         
+    <br><br><b>Clave Nueva </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" maxlength="8" id="pNv"  />   
+	<br><br><b>Repita su clave </b>&nbsp;&nbsp;&nbsp; <input type="password" maxlength="8" id="pNr"  />   
+    <br><br>
+	<input type="button" onclick="verificar();recargar()" value="Enviar" />
+	<input type="reset" value="Limpiar" />
+  </ul>
+</form>
+</body>
+</html>
