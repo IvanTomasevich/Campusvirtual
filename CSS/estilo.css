@@ -50,7 +50,7 @@ body{
 	z-index: -20;
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 30px;
-	transition: all 0.5s;	
+	transition: all 0.5s;
 }
 .formulario__submit {
 	background: rgba(143, 143, 143, 0.5);
@@ -64,7 +64,7 @@ body{
 header{
 	margin-top: 50px;
 	text-align: center;
-	color: rgba(255, 255, 255, 0.6);
+	color: #fff;
 	font-size: 70px;
 }
 .entrar__carrera, .entrar__calendario, .entrar__biblioteca, .entrar__extracurriculares{
